@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Pepsi.com</title>
+    <link rel="icon" href="favicon.ico" sizes="36X376" />
+    <link rel="stylesheet" href="./style.css" />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+  </head>
+  <body>
+    <div class="nav-bar-grid">
+      <div class="image-container">
+        <img class="pepsi-logo" src="favicon.ico" alt="Pepsi" />
+      </div>
+      <div class="nav-elm">
+        <ul>
+          <div class="li-elm">
+            <li>
+              <a href=""
+                ><span class="material-symbols-outlined"> menu </span></a
+              >
+            </li>
+            <li class="pc-view"><a href="">CONTACT US</a></li>
+            <li class="pc-view"><a href="">NEWSLETTER</a></li>
+            <li class="pc-view"><a href="">WHAT'S NEW</a></li>
+            <li class="pc-view"><a href="">HOME</a></li>
+          </div>
+        </ul>
+      </div>
+    </div>
+
+    <div class="socials">
+      <a href="https://www.facebook.com/pepsi/" target="_blank"
+        ><i class="fa fa-facebook" id="fb"></i
+      ></a>
+      <a href="https://www.instagram.com/pepsi/" target="_blank"
+        ><i class="fa fa-instagram" id="insta"></i
+      ></a>
+      <a href="https://twitter.com/pepsi" target="_blank"
+        ><i class="fa fa-twitter" id="twit"></i
+      ></a>
+    </div>
+
+    <div class="product-display">
+      <img class="Product-Image" src="images/BlueCan.png" alt=""  id="product-image-1"/>
+    </div>
+
+    <div class="Texts-here">
+      <div class="head">
+        <h2 class="heading">THAT'S WHAT</h2>
+        <h1 class="heading2">I LIKE</h1>
+        <p class="description">
+          "Pepsi is a carbonated soft drink known for its sweet taste and<br />refreshing
+          fizz. Made with carbonated water, high-fructose corn<br />syrup,
+          natural flavors, and caffeine, it has been enjoyed by millions<br />worldwide
+          since 1898."
+        </p>
+      </div>
+      <div class="button">
+        <button class="product">VIEW PRODUCTS</button>
+      </div>
+    </div>
+
+    <div class="products-dis">
+      <div class="items">
+        <button
+          class="bg-changer"
+          id="btn1"
+          onclick="backgroundChanger('blue'); imageChanger('product-image-1', 'images/BlueCan.png')"
+        >
+          <img class="btm-dis" src="images/BlueCan.png" alt="pepsi" />
+        </button>
+        <button class="bg-changer" id="btn2" onclick="backgroundChanger('red');  imageChanger('product-image-1', 'images/Diet-Pepsi.png')">
+          <img
+            class="btm-dis"
+            src="images/Diet-Pepsi.png"
+            alt="pepsi"
+          />
+        </button>
+        <button
+          class="bg-changer"
+          id="btn3"
+          onclick="backgroundChanger('black'); imageChanger('product-image-1', 'images/zero-pepsi.png')"
+        >
+          <img
+            class="btm-dis"
+            src="images/zero-pepsi.png"
+            alt=""
+          />
+        </button>
+      </div>
+    </div>
+
+    <script src="script.js"></script>
+    </script>
+  </body>
+</html>
