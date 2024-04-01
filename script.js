@@ -1,4 +1,4 @@
-function backgroundChanger(color) {
+/*function backgroundChanger(color) {
     if (color === "blue") {
       document.querySelector("body").style.backgroundColor = "#0065c3";
     } else if (color === "red") {
@@ -30,4 +30,36 @@ function backgroundChanger(color) {
 
   function imageChanger(id, imageSrc) {
     document.getElementById(id).src = imageSrc;
+  }*/
+
+function backgroundChanger(color) {
+  if (color === "blue") {
+    document.querySelector("body").style.backgroundColor = "#0065c3";
+  } else if (color === "red") {
+    document.querySelector("body").style.backgroundColor = "red";
+  } else if (color === "black") {
+    document.querySelector("body").style.backgroundColor = "black";
   }
+}
+
+function imageChanger(id, imageSrc) {
+  document.getElementById(id).src = imageSrc;
+}
+
+// Add event listeners separately, outside of the imageChanger function
+let btn1 = document.querySelector("#btn1");
+let btn2 = document.querySelector("#btn2");
+let btn3 = document.querySelector("#btn3");
+
+btn1.addEventListener("click", () => {
+  imageChanger("Product-Display", "images/Bluecan.png");
+});
+
+btn2.addEventListener("click", () => {
+  imageChanger("Product-Display", "images/Diet-Pepsi.png");
+});
+
+btn3.addEventListener("click", () => {
+  imageChanger("Product-Display", "images/3.zero-pepsi.png");
+});
+
